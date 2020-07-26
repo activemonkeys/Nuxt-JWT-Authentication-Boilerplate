@@ -6,7 +6,7 @@ export const mutations = {};
 
 export const actions = {
   async nuxtServerInit({ commit, dispatch }, { req, app }) {
-    let redirectQuery =
+    let redirectPath =
       route.path === "/" ? "/login" : `/login?redirect=${route.path}`;
 
     if (process.server && (!app.$auth.user || !app.$auth.tokens)) {
@@ -14,7 +14,7 @@ export const actions = {
         await this.$auth.refresh();
       } catch (e) {
         this.$auth.resetJWT();
-        return this.$router.push(redirectQuery);
+        return this.$router.push(redirectPath);
       }
     }
   }
