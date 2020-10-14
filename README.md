@@ -1,6 +1,10 @@
 # Nuxt-JWT-Authentication-Boilerplate
 
-## Build Setup
+### This is kinda specific to the project I'm working on. Feel free to customize it
+
+### I was looking hard on how to implement JWT Authentication on Nuxt, but could not find anything to fit my needs. So I made this boilerplate. Feel free to ask any question
+
+### Build Setup
 
 ```bash
 # install dependencies
